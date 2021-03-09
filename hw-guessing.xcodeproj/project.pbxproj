@@ -11,8 +11,7 @@
 		D229ED6825F1C11C0062C6C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229ED6725F1C11C0062C6C4 /* ContentView.swift */; };
 		D229ED6A25F1C11E0062C6C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D229ED6925F1C11E0062C6C4 /* Assets.xcassets */; };
 		D229ED6D25F1C11E0062C6C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D229ED6C25F1C11E0062C6C4 /* Preview Assets.xcassets */; };
-		D229ED7825F1C11F0062C6C4 /* hw_guessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229ED7725F1C11F0062C6C4 /* hw_guessingTests.swift */; };
-		D229ED8325F1C11F0062C6C4 /* hw_guessingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D229ED8225F1C11F0062C6C4 /* hw_guessingUITests.swift */; };
+		D283FB6425F6646E008D2C13 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = D283FB6325F6646E008D2C13 /* questions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +39,8 @@
 		D229ED6C25F1C11E0062C6C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D229ED6E25F1C11E0062C6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D229ED7325F1C11F0062C6C4 /* hw-guessingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hw-guessingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D229ED7725F1C11F0062C6C4 /* hw_guessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw_guessingTests.swift; sourceTree = "<group>"; };
-		D229ED7925F1C11F0062C6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D229ED7E25F1C11F0062C6C4 /* hw-guessingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hw-guessingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D229ED8225F1C11F0062C6C4 /* hw_guessingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw_guessingUITests.swift; sourceTree = "<group>"; };
-		D229ED8425F1C11F0062C6C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D283FB6325F6646E008D2C13 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				D229ED6425F1C11C0062C6C4 /* hw-guessing */,
-				D229ED7625F1C11F0062C6C4 /* hw-guessingTests */,
-				D229ED8125F1C11F0062C6C4 /* hw-guessingUITests */,
 				D229ED6325F1C11C0062C6C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +91,7 @@
 			children = (
 				D229ED6525F1C11C0062C6C4 /* hw_guessingApp.swift */,
 				D229ED6725F1C11C0062C6C4 /* ContentView.swift */,
+				D283FB6325F6646E008D2C13 /* questions.json */,
 				D229ED6925F1C11E0062C6C4 /* Assets.xcassets */,
 				D229ED6E25F1C11E0062C6C4 /* Info.plist */,
 				D229ED6B25F1C11E0062C6C4 /* Preview Content */,
@@ -110,24 +105,6 @@
 				D229ED6C25F1C11E0062C6C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D229ED7625F1C11F0062C6C4 /* hw-guessingTests */ = {
-			isa = PBXGroup;
-			children = (
-				D229ED7725F1C11F0062C6C4 /* hw_guessingTests.swift */,
-				D229ED7925F1C11F0062C6C4 /* Info.plist */,
-			);
-			path = "hw-guessingTests";
-			sourceTree = "<group>";
-		};
-		D229ED8125F1C11F0062C6C4 /* hw-guessingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D229ED8225F1C11F0062C6C4 /* hw_guessingUITests.swift */,
-				D229ED8425F1C11F0062C6C4 /* Info.plist */,
-			);
-			path = "hw-guessingUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D283FB6425F6646E008D2C13 /* questions.json in Resources */,
 				D229ED6D25F1C11E0062C6C4 /* Preview Assets.xcassets in Resources */,
 				D229ED6A25F1C11E0062C6C4 /* Assets.xcassets in Resources */,
 			);
@@ -268,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D229ED7825F1C11F0062C6C4 /* hw_guessingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D229ED8325F1C11F0062C6C4 /* hw_guessingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

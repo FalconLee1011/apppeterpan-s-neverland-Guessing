@@ -11,7 +11,7 @@ import SwiftUI
 struct hw_guessingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(q: question(q: "問題", a: "答案"), qShow: "")
         }
     }
 }
